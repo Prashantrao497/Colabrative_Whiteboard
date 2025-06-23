@@ -1,0 +1,56 @@
+.title:hover {
+  transform: scale(1.1);
+  background: linear-gradient(
+    45deg,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  ); /* Rainbow gradient */
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: rainbow 3s linear infinite;
+}
+
+.title {
+  text-align: center;
+  max-width: 80%;
+  margin: 0 auto;
+  word-wrap: break-word;
+}
+
+.user {
+  color: rgb(100, 97, 97);
+  font-style: italic;
+  font-size: 30px;
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+/* Rainbow animation for a dynamic look */
+@keyframes rainbow {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+
+/* For the shape dropdown positioning */
+.dropdown-menu {
+  display: block;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
